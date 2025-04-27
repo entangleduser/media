@@ -11,7 +11,7 @@ let package = Package(
  ],
  targets: [
   .target(name: "Media", dependencies: ["Audio", "Remote", "Format"]),
-  .target(name: "Audio"),
+  .target(name: "Audio", dependencies: ["Format"]),
   .target(name: "Remote"),
   .target(name: "Format"),
   .testTarget(name: "MediaTests", dependencies: ["Media"])
